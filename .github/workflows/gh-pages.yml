@@ -3,28 +3,29 @@ name: github pages
 on:
   push:
     branches:
-      - master
+    - master
 
 jobs:
-  deploy:
+  build-deploy:
     runs-on: ubuntu-18.04
     steps:
-      - uses: actions/checkout@v2
-        with:
-          submodules: true # Fetch Hugo themes (true OR recursive)
+    - uses: actions/checkout@master
+       with:
+         submodules: true
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: 'latest'
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v2.2.3
+      with:
+        hugo-version: 'latest'
+        extended: true
 
-      - name: Build
-        run: hugo --minify
+    - name: Build
+      run: hugo --minify
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v2.5.0
-        env:
-          ACTIONS_DEPLOY_KEY: ${{ secrets.BLOG_TOKEN}}
-          EXTERNAL_REPOSITORY: HankiGreed/HankiGreed.github.io
-          PUBLISH_BRANCH: master
-          PUBLISH_DIR: ./public
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v2.5.0
+      env:
+        ACTIONS_DEPLOY_KEY: ${{ secrets.BLOG_TOKEN }}
+        EXTERNAL_REPOSITORY: HankiGreed/HankiGreed.github.io
+        PUBLISH_BRANCH: master
+        PUBLISH_DIR: ./public
