@@ -58,7 +58,7 @@ copyright = ""            # default: author.name ↓
   gitRepo = "https://github.com/HankiGreed/blogchain.git"
 
   # site info (optional)                                  
-  logoTitle = " Blogchain"        # default: the title value    
+  logoTitle = "Blogchain"        # default: the title value    
   keywords = ["Blockchain", "Ethereum", "Smart Contract"]
   description = "A Blockchain Blog"
 
