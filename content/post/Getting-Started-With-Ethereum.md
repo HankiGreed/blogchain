@@ -2,6 +2,9 @@
 title: "Getting Started With Ethereum"
 date: 2020-06-10T12:02:37+05:30
 draft: false 
+lastmod: 2020-06-10T12 17:55+05:30
+tags: ["Ethereum","Blockchain", "Smart Contract"]
+categories: ["Beginner", "Tutorial"]
 ---
 
 > With Ethereum 2.0 underway, There is not a better time to jump into the interesting world of Blockchain. 

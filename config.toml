@@ -16,8 +16,8 @@ pygmentsCodefencesGuessSyntax = true
 
 hasCJKLanguage = true     
 paginate = 5               
-disqusShortname = "blogchain_kiran"      # disqus_shortname
-googleAnalytics = ""      # UA-XXXXXXXX-X
+disqusShortname = "blogchain-me"      # disqus_shortname
+googleAnalytics = "UA-169050086-1"      # UA-XXXXXXXX-X
 copyright = ""            # default: author.name ↓        
 
 [author]                  # essential                     
@@ -126,7 +126,7 @@ copyright = ""            # default: author.name ↓
     warn = 180              # Display warning if the last modified time is more than these days ago.    
 
   [params.gitment]          # Gitment is a comment system based on GitHub issues. see https://github.com/imsun/gitment
-    owner = "HankiGreed"              # Your GitHub ID
+    owner = ""              # Your GitHub ID
     repo = ""               # The repo to store comments
     clientId = ""           # Your client ID
     clientSecret = ""       # Your client secret
@@ -155,11 +155,11 @@ copyright = ""            # default: author.name ↓
     visitor = false
 
   [params.flowchartDiagrams]# see https://blog.olowolo.com/example-site/post/js-flowchart-diagrams/
-    enable = false
+    enable = true 
     options = ""
 
   [params.sequenceDiagrams] # see https://blog.olowolo.com/example-site/post/js-sequence-diagrams/
-    enable = false
+    enable = true 
     options = ""            # default: "{theme: 'simple'}"
 
   [params.busuanzi]         # count web traffic by busuanzi                             
