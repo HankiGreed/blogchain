@@ -24,6 +24,6 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.BLOG_TOKEN }}
+          action_deploy_key: ${{ secrets.BLOG_TOKEN }}
           external_repository: HankiGreed/HankiGreed.github.io
           publish_dir: ./public
