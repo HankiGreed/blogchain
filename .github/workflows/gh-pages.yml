@@ -23,9 +23,8 @@ jobs:
       run: hugo --minify
 
     - name: Deploy
-      uses: peaceiris/actions-gh-pages@v2.5.0
-      env:
-        ACTIONS_DEPLOY_KEY: ${{ secrets.BLOG_TOKEN }}
-        EXTERNAL_REPOSITORY: HankiGreed/HankiGreed.github.io
-        PUBLISH_BRANCH: master
-        PUBLISH_DIR: ./public
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        personal_token: ${{ secrets.BLOG_TOKEN }}
+        external_repository: HankiGreed/HankiGreed.github.io 
+        publish_dir: ./public
