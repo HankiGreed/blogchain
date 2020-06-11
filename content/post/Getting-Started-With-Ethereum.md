@@ -17,6 +17,7 @@ Ethereum was conceptually started by [Vitalik Buterin](https://twitter.com/Vital
 ---
 ## How and where do I write code ?
 > I've seen most blogs don't cover this rightaway, I thought it's worth knowing your options.:grin:
+
 The most used programming language to write contracts in the ethereum ecosystem is [Solidity](https://solidity.readthedocs.io). There are many ways you can start writing solidity code. 
 
 - ### Online
