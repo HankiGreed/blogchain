@@ -103,7 +103,7 @@ copyright = ""            # default: author.name ↓
   # Link custom CSS and JS assets
   #   (relative to /static/css and /static/js respectively)
   customCSS = []
-  customJS = ['<script src="https://kit.fontawesome.com/582fcc4364.js" crossorigin="anonymous"></script>']
+  customJS = []
 
   uglyURLs = false          # please keep same with uglyurls setting
 
