@@ -16,7 +16,7 @@ pygmentsCodefencesGuessSyntax = true
 
 hasCJKLanguage = true     
 paginate = 5               
-disqusShortname = "blogchain-me"      # disqus_shortname
+disqusShortname = "blogchain-wtf"      # disqus_shortname
 googleAnalytics = "UA-169050086-1"      # UA-XXXXXXXX-X
 copyright = ""            # default: author.name ↓        
 
