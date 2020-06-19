@@ -35,7 +35,7 @@ The most used programming language to write contracts in the ethereum ecosystem 
     |-----------|----------|
     |[Truffle](https://trufflesuite.org/truffle)    |CLI to compile, link & Test contracts, Also other tools ([Ganache](https://trufflesuite.org/ganache) *Local Blockchain, Yay !*) |
     |[OpenZeppelin](https://docs.openzeppelin.com/cli/)|Test compile deploy *Update* Contracts, Has a great [Smart Contract](https://docs.openzeppelin.com/contracts) library |
-    |[Embark](https://framework.embarklabs.io/)|A Swiss Knife for Ethereum, Not a really a beginner level tool|
+    |[Embark](https://framework.embarklabs.io/)|A Swiss Knife for Ethereum, Can run `IPFS` nodes, a local blockchain etc. Has a steep learning curve|
     
 
 > :zap: I plan to write a post OpenZeppelin's contract library, Lookout for it :zap:
@@ -112,6 +112,6 @@ Below it we have three functions
 > Though `name` variable is `private` (Default Scope), Due the function `setName` being public let's anybody modify it.
 > Beware of such patterns in your code !
 
-**Congrat's on writing your first Smart Contract. Treat yourslef to something (:ice_cream:/:beers:)**
+**Congrats on writing your first Smart Contract. Treat yourself to something (:ice_cream:/:beers:)**
 
 **You Deserve It !**
