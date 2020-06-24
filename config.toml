@@ -1,3 +1,5 @@
+canonifyurls = true
+relativeURLS = true
 baseURL = "http://blogchain.wtf"
 languageCode = "en"
 defaultContentLanguage = "en"                             
@@ -190,8 +192,6 @@ copyright = ""            # default: author.name ↓
   [privacy.youtube]
     privacyEnhanced = true
 
-[markup]
-  defaultMarkdownHandler = "blackfriday"
 
 # Uncomment these options to make hugo output .md files.
 #[mediaTypes]
