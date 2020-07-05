@@ -38,8 +38,6 @@ The most used programming language to write contracts in the ethereum ecosystem 
     |[Embark](https://framework.embarklabs.io/)|A Swiss Knife for Ethereum, Can run `IPFS` nodes, a local blockchain etc. Has a steep learning curve|
     
 
-> :zap: I plan to write a post OpenZeppelin's contract library, Lookout for it :zap:
-
 --- 
 ## Grr, Show Me Some Code Already !!! :tiger:
 
