@@ -2,7 +2,7 @@
 title: "Flash Loans, Flashier Attacks !"
 date: 2020-07-15T09:55:29+05:30
 lastmod: 2020-07-15T09:55:29+05:30 
-draft: true
+draft: false
 keywords: ["defi", "aave", "bzx"]
 description: ""
 tags: ["defi", "security", "aave"]
