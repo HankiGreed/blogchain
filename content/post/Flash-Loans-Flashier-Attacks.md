@@ -73,10 +73,43 @@ $${2817.77 + 5637.2 \over 77.09} = {109.67661175249707\ ETH/WBTC}$$
 
 This stellar rise in the price actually [defaults](https://www.investopedia.com/terms/d/default2.asp) the position in bZx, as the borrwed WBTC's total value is now way over that was collateralized. So this position was left by the attacker to be liquidated by bZx as he got what he wanted, The stellar rise in the WBTC-ETH price. Now he can just return the 112 WBTC that he borrowed from Compound in **Step 2** at a much much greater value, giving him a hefty profit.
 
+>  **Note**  
 > The [Paper](https://arxiv.org/abs/2003.03810) considers this attack under-performing and goes on to explain which of the trade parameters 
 > could have been altered to realize a much greater profit :flushed:, Do give it read as they solve it as an optimization problem, Some part of 
 > which went way over my head.:astonished:
 
-- ### So, What went wrong ?
-The smart contract missed a sanity check which would not let transactions that default themselves go through, In this particular case.
+- ### So, What went wrong and can we blame Flash Loans ?
+
+> Its obvious that without a flashloan an attack this huge would not be as easy. So are **_Flash Loans_** to blame ?
+
+### Actually **No**
+Though the flash loan provided huge amount of currency, It was up to Uniswap & bZx to not let a transaction that would default itself to go through.The bZx smart contract missed a sanity check which would not let transactions that default themselves go through, In this particular case. Though there was an implementation of this check, It just was not called in the said case. 
+
+> The bug was fixed quickly, and there was not an attack of the same type again. That shows bZx's competency.
+
+## Attack #2 (Oracle Manipulation)
+
+### What is Oracle ?
+The [_Openzeppelin Blockchain Glossary_](https://consensys.net/knowledge-base/a-blockchain-glossary-for-beginners/) says
+
+>  **Note**  
+>Typically, an oracle is any entity or person that is relied on to report the outcome of an event. In a blockchain network an oracle (human or machine) helps communicate data to a smart contract which can then be used to verify an event or specific outcome.
+
+In DeFi ecosystem, Oracles are Decentralized Exchanges whose current state of assets is used to determine the price of a given asset. The benefit of it is being completely independent and On-Chain. The downside is that they can be manipulated.
+
+The core of this attack wishes to manipulate a DEX *([Kyber](https://kyber.network/) & [Uniswap](https://uniswap.org)  Specifically)* to decrease the price of sUSD/ETH, then use a trading platform ([bZx](https://bZx.network)) which uses Kyber DEX as Price Oracle to borrow sUSD at a distorted price and in the final step, sell the borrowed sUSD at an exchange that doesn't use Kyber as a Price Oracle.
+
+The attack managed to pull off a **_675k_** USD profit.
+
+> I am not going to give you the exact steps of this attack as that would simply drag the post.
+
+>  **Note**  
+>The paper I referenced again states this to be underperforming and gives the parameters for an attack that would give **_1.1M USD_** :flushed: :money_with_wings: profit.
+
+## Bottomline
+
+Some takeaways from these attacks,
+- The very benefit of being open to everyone is also the bane of Blockchain system as anyone can join the network, Implement their innovative protocol and let it loose in the wind and now its everyone's responsibility to check their code for faults that were not in scope before but are looming threats now.
+- As a new protocol, method or a currency walks into the already overflowing DeFi system, it not only increases the  variety and options but also the [Attack Surface](https://en.wikipedia.org/wiki/Attack_surface).
+
 
