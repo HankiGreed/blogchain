@@ -16,7 +16,7 @@ mathjaxEnableAutoNumber: true
 > Most of the content in this post is either from or inspired by [this](https://arxiv.org/abs/2003.03810) paper. If you would rather read it,
 > go ahead and skip this post.
 
-## Decentralized Finance. 
+## Decentralized Finance. (DeFi)
 
 [Decentralized Finance](https://www.securities.io/what-is-defi/) is an effort to bring the benefits of distributed ledger technologies to the real world of finance. Instead of the financial institution [knowing their customers](https://en.wikipedia.org/wiki/Know_your_customer) to ensure their trust is well placed, you are able to transparently view all of the [Smart Contracts](https://blogchain.wtf/post/getting-started-with-ethereum/), security practices, security audits to effectively *Know Your Bank*. Even if you are not well versed with the jargons and tech related to the contract, you can still check the security audit, and see how many of the high severity bugs  have been fixed. That should give you a pretty good idea of the practices of that community. The known practices of DeFi have been the overcollateralized loans where you have to first lend some currency into their pool, use them as collateral to take some other currency as a loan. This system welcomes a whole lot of trading opportunities as is and they have been put to use for quite some time now. So what does flash loan bring to the table ?
 
