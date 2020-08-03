@@ -48,7 +48,7 @@ Flash Loans, pioneered by [AAVE](https://aave.com), is a method of borrowing any
 
 > The following explanations are superficial, If you need exact details, read the paper or disclosures by bZx.
 
-This attack involved pumping an exchange with enormous amount of one currency, borrowing the other, Which will lead to an imbalance of the prices
+This attack involved pumping an exchange with enormous amount of one currency, borrowing the other, Which will lead to an imbalance of the prices. The table below shows each of the transactions that the attacker made, With the `Assets` column showing the amount of cryptocurrency that the attacker currently has and the `Steps` are each an action that the attacker made .(He starts at zero.)
 
 |Steps| Assets|
 |------|--|
